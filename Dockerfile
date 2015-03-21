@@ -1,6 +1,6 @@
-FROM resin/rpi-raspbian:wheezy-2015-01-15
+FROM resin/rpi-raspbian:jessie-2015-01-15
 
-# Install Python.
+# Install Python and other dependencies
 RUN apt-get update && apt-get install -y python python-dev python-pip mplayer
 
 RUN pip install RPi.Gpio w1thermsensor
