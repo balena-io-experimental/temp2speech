@@ -7,4 +7,4 @@ RUN pip install RPi.Gpio w1thermsensor
 
 ADD . /app
 
-CMD ["python", "/app/hello.py"]
+CMD ["python", "/app/temp_to_speech.py"]
