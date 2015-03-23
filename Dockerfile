@@ -1,4 +1,4 @@
-FROM resin/rpi-raspbian:jessie-2015-01-15
+FROM resin/rpi-raspbian:jessie-2015-02-08
 
 # Install Python and other dependencies
 RUN apt-get update && apt-get install -y python python-dev python-pip mplayer
