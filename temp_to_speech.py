@@ -1,6 +1,7 @@
 #!/usr/bin/python
 import time, os, subprocess
 import RPi.GPIO as GPIO
+# https://github.com/timofurrer/w1thermsensor
 from w1thermsensor import W1ThermSensor
 
 # Get the desired unit to measure by
@@ -16,7 +17,6 @@ temperature = None
 
 def read_temp():
 	# uses tim furrer's w1thermsensor to read temperatures from the sensor depending resin envar.
-	# https://github.com/timofurrer/w1thermsensor
 	if unit == 'kelvin':
 		temperature = sensor.get_temperature(W1ThermSensor.KELVIN)
 	elif unit == 'fahrenheit':
